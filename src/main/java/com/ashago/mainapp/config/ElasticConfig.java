@@ -40,7 +40,7 @@ public class ElasticConfig {
     public RestHighLevelClient prepareConnection() {
 
         RestClientBuilder restBuilder = RestClient.builder(new HttpHost(
-                "quickstart-es-http", 9200, "https"));
+                "elasticsearch-qp96l-private", 80, "http"));
 //         RestClientBuilder restBuilder = RestClient.builder(new HttpHost(
 //                 "es.cc2dbe1fd91f042528f96dc27c2dba5fe.cn-zhangjiakou.alicontainer.com", Integer.valueOf("80"), "https"));
         final CredentialsProvider creadential = new BasicCredentialsProvider();
